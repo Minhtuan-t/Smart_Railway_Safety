@@ -3,7 +3,7 @@ import time
 import threading
 from queue import Queue, Empty
 from ultralytics import YOLO
-
+from playsound import playsound
 # ================== CẤU HÌNH ==================
 CAMERA_SOURCE = 0   # Webcam (0 = default)
 MODEL_PATHS = ['car.pt', 'yolo11n.pt']   # chạy cả 2 model
