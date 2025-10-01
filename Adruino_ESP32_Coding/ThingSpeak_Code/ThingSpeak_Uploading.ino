@@ -3,10 +3,10 @@
 #include <WiFiClient.h>
 #include <Arduino.h>
 
-#define ssid "*******"
-#define pass "*******"
+#define ssid "BKSTAR_T2_02"
+#define pass "stemstar"
 
-#define myApi "your_api_key_from_thingspeak"
+#define myApi "http://api.thingspeak.com/update?api_key=5F8N9Q7AI0PQZQBH&field1=0&status=ok_very_good"
 
 WiFiClient client;
 
