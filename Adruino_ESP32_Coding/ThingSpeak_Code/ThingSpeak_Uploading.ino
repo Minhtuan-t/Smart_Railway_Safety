@@ -26,15 +26,11 @@ void setup() {
 void loop() {
   WiFiClient client;
   HTTPClient http;
-    
   // Your IP address with path or Domain name with URL path 
   http.begin(client, myApi);
-  
   // Send HTTP POST request
   int httpResponseCode = http.GET();
-  
   String payload = "{}"; 
-  
   if (httpResponseCode>0) {
     Serial.print("HTTP Response code: ");
     Serial.println(httpResponseCode);
@@ -47,6 +43,5 @@ void loop() {
   }
   // Free resources
   http.end();
-
   delay(15*1000);
 }
